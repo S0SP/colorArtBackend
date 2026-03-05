@@ -17,7 +17,7 @@ from processing.pipeline import process_image
 # ─── Constants ─────────────────────────────────────────────────────────────────
 MAX_FILE_SIZE = 5 * 1024 * 1024          # 5 MB
 MAX_RESOLUTION = 6000                     # 6000px in any dimension
-PROCESSING_TIMEOUT_SECONDS = 10           # Abort if processing exceeds this
+PROCESSING_TIMEOUT_SECONDS = 40           # Abort if processing exceeds this (Render Free CPU is slow)
 
 # ─── App ───────────────────────────────────────────────────────────────────────
 app = FastAPI(
